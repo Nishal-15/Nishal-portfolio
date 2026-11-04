@@ -115,7 +115,7 @@ export const Footer = () => {
         </ul>
         <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm">
           <p>
-            © {new Date().getFullYear()} {profile.name} · Built with React, Three.js &amp; Tailwind
+            © {new Date().getFullYear()} {profile.name}. All rights reserved.
           </p>
           <a
             href="#home"
