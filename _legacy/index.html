@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishal R — AI & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Nishal R — BSc AI & ML student, full-stack developer and AI-powered application builder based in Coimbatore, Tamil Nadu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">N<span>R</span></div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav-logo">N<span>R</span>.</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span></button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content container">
+      <p class="hero-tag reveal"><span class="dot"></span> Available for internships & opportunities</p>
+      <h1 class="hero-title reveal">
+        Hi, I'm <span class="gradient-text">Nishal R</span>
+      </h1>
+      <h2 class="hero-sub reveal">
+        <span class="typed" id="typed"></span><span class="caret">|</span>
+      </h2>
+      <p class="hero-desc reveal">
+        BSc AI &amp; ML student building production-focused web apps, AI-powered tools and
+        RAG-based solutions — from idea to live deployment.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary magnetic">View My Work <span>→</span></a>
+        <a href="#contact" class="btn btn-ghost magnetic">Get In Touch</a>
+      </div>
+      <div class="hero-meta reveal">
+        <span>📍 Coimbatore, Tamil Nadu</span>
+        <span>🏆 Hackathon Winner</span>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <p class="section-label reveal">01 — About Me</p>
+        <h2 class="section-title reveal">Engineering software with an <span class="gradient-text">AI-first</span> mindset.</h2>
+        <p class="reveal">
+          I'm a motivated developer with strong fundamentals in <strong>Java</strong>, <strong>Python</strong>,
+          web development and AI-powered applications. I work hands-on with AI-assisted development —
+          prompt engineering, code verification, debugging and deployment using tools like
+          <strong>Cursor</strong>, <strong>Antigravity</strong> and <strong>GitHub Copilot</strong>.
+        </p>
+        <p class="reveal">
+          I've built real-world, production-focused applications and databases and delivered live client
+          projects. I'm especially passionate about AI-driven software engineering and
+          <strong>RAG-based solutions</strong>.
+        </p>
+        <div class="stats reveal">
+          <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span><p>Projects Shipped</p></div>
+          <div class="stat"><span class="stat-num" data-count="2">0</span><p>Live Client Sites</p></div>
+          <div class="stat"><span class="stat-num" data-count="4">0</span><p>Hackathons</p></div>
+          <div class="stat"><span class="stat-num" data-count="1">0</span><p>Hackathon Win</p></div>
+        </div>
+      </div>
+
+      <div class="about-visual reveal">
+        <div class="cube-scene">
+          <div class="cube" id="cube">
+            <div class="face front">Python</div>
+            <div class="face back">Java</div>
+            <div class="face right">React</div>
+            <div class="face left">Node.js</div>
+            <div class="face top">MongoDB</div>
+            <div class="face bottom">AI / ML</div>
+          </div>
+        </div>
+        <div class="orbit-ring"></div>
+        <div class="orbit-ring r2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-label reveal">02 — Skills</p>
+      <h2 class="section-title reveal">My technical <span class="gradient-text">toolkit</span>.</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card tilt reveal">
+          <div class="skill-icon">⌨️</div>
+          <h3>Programming Languages</h3>
+          <div class="chips"><span>Java</span><span>Python</span></div>
+        </div>
+        <div class="skill-card tilt reveal">
+          <div class="skill-icon">🌐</div>
+          <h3>Web Technologies</h3>
+          <div class="chips"><span>HTML</span><span>CSS</span><span>React</span><span>Node.js</span><span>Express.js</span></div>
+        </div>
+        <div class="skill-card tilt reveal">
+          <div class="skill-icon">🗄️</div>
+          <h3>Databases</h3>
+          <div class="chips"><span>MySQL</span><span>MongoDB</span></div>
+        </div>
+        <div class="skill-card tilt reveal">
+          <div class="skill-icon">🤖</div>
+          <h3>Tools &amp; AI</h3>
+          <div class="chips"><span>AI-Assisted Dev</span><span>Prompt Engineering</span><span>Cursor</span><span>Copilot</span><span>Git</span><span>GitHub</span></div>
+        </div>
+      </div>
+
+      <div class="soft-skills reveal">
+        <h3>Soft Skills</h3>
+        <div class="soft-list">
+          <span>🧠 Logical Thinking</span>
+          <span>🧩 Problem Solving</span>
+          <span>🎯 Decision Making</span>
+          <span>💬 Communication</span>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Java</span><span>✦</span><span>Python</span><span>✦</span><span>React</span><span>✦</span><span>Node.js</span><span>✦</span><span>Express</span><span>✦</span><span>MongoDB</span><span>✦</span><span>MySQL</span><span>✦</span><span>Machine Learning</span><span>✦</span><span>RAG</span><span>✦</span>
+          <span>Java</span><span>✦</span><span>Python</span><span>✦</span><span>React</span><span>✦</span><span>Node.js</span><span>✦</span><span>Express</span><span>✦</span><span>MongoDB</span><span>✦</span><span>MySQL</span><span>✦</span><span>Machine Learning</span><span>✦</span><span>RAG</span><span>✦</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-label reveal">03 — Projects</p>
+      <h2 class="section-title reveal">Things I've <span class="gradient-text">built</span>.</h2>
+
+      <div class="projects-grid">
+        <article class="project-card tilt reveal featured">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-badge">AI · Featured</span>
+            <span class="project-date">05/2026 – 09/2026</span>
+          </div>
+          <div class="project-visual juris">
+            <div class="chat-bubble b1">What are my tenant rights?</div>
+            <div class="chat-bubble b2">Under the Rent Control Act, you're entitled to…</div>
+            <div class="chat-bubble b3">Connect me with an advocate</div>
+          </div>
+          <h3>Juris</h3>
+          <p>
+            An AI-powered legal chatbot providing instant legal guidance, intelligent query handling and
+            secure advocate consultation support through a web-based platform.
+          </p>
+          <div class="tags"><span>Python</span><span>React</span><span>MongoDB</span><span>Machine Learning</span></div>
+        </article>
+
+        <article class="project-card tilt reveal">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-badge">Client · Live</span>
+            <span class="project-date">03/2026 – 05/2026</span>
+          </div>
+          <div class="project-visual browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span>drkc · live</span></div>
+            <div class="browser-body"><div class="bb-hero"></div><div class="bb-row"><span></span><span></span><span></span></div></div>
+          </div>
+          <h3>Client Website — DRKC</h3>
+          <p>
+            Improved UI components, implemented requirement-based corrections, and managed website hosting
+            and domain deployment on a live production website.
+          </p>
+          <div class="tags"><span>UI Development</span><span>Hosting</span><span>Domain Deployment</span></div>
+        </article>
+
+        <article class="project-card tilt reveal">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-badge">Client · E-Commerce</span>
+            <span class="project-date">09/2026 – 11/2026</span>
+          </div>
+          <div class="project-visual shop">
+            <div class="shop-item"></div><div class="shop-item"></div><div class="shop-item"></div>
+            <div class="shop-cart">🛒 <b>3</b></div>
+          </div>
+          <h3>Ahankara Studios — E-Commerce</h3>
+          <p>
+            A responsive e-commerce website with intuitive navigation, modern UI design and a seamless
+            online shopping experience across all devices.
+          </p>
+          <div class="tags"><span>Responsive Design</span><span>E-Commerce</span><span>Modern UI</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education">
+    <div class="container">
+      <p class="section-label reveal">04 — Education</p>
+      <h2 class="section-title reveal">Academic <span class="gradient-text">journey</span>.</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card tilt">
+            <span class="timeline-date">2024 – Pursuing</span>
+            <h3>BSc Artificial Intelligence &amp; Machine Learning</h3>
+            <p class="inst">KPR College of Arts Science and Research · Coimbatore</p>
+            <span class="score">CGPA 7.0 <small>(up to semester 4)</small></span>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card tilt">
+            <span class="timeline-date">2024</span>
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <p class="inst">MDN Future CBSE Sr. Sec School · Coimbatore</p>
+            <span class="score">76.6%</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card tilt">
+            <span class="timeline-date">2022</span>
+            <h3>Secondary School Leaving Certificate (SSLC)</h3>
+            <p class="inst">MDN Future CBSE Sr. Sec School · Coimbatore</p>
+            <span class="score">68.2%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <p class="section-label reveal">05 — Achievements</p>
+      <h2 class="section-title reveal">Hackathons &amp; <span class="gradient-text">certifications</span>.</h2>
+
+      <div class="achieve-grid">
+        <div class="achieve-card winner tilt reveal">
+          <div class="trophy">🏆</div>
+          <span class="achieve-tag">Winner</span>
+          <h3>Intra-College Hackathon</h3>
+          <p>Won first place for developing a Visitor Management System.</p>
+        </div>
+        <div class="achieve-card tilt reveal">
+          <div class="trophy">🚀</div>
+          <span class="achieve-tag">Finalist</span>
+          <h3>Odoo Hackathon 2026</h3>
+          <p>Reached the finals of the Odoo 2026 hackathon.</p>
+        </div>
+        <div class="achieve-card tilt reveal">
+          <div class="trophy">🛰️</div>
+          <span class="achieve-tag">Participant</span>
+          <h3>Bharatiya Antariksh Hackathon 2025</h3>
+          <p>Took on space-tech problem statements at the national-level hackathon.</p>
+        </div>
+        <div class="achieve-card tilt reveal">
+          <div class="trophy">🇮🇳</div>
+          <span class="achieve-tag">Participant</span>
+          <h3>Smart India Hackathon 2025</h3>
+          <p>Participated in SIH 2025, India's flagship innovation challenge.</p>
+        </div>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">📜</div>
+          <div>
+            <h4>FreeCodeCamp — Front-End Development</h4>
+            <p>Legacy Responsive Web Design V8 Certification</p>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🎖️</div>
+          <div>
+            <h4>FixIT — Intra-College Hackathon</h4>
+            <p>Visitor Management System</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="contact-info">
+          <p class="section-label">06 — Contact</p>
+          <h2 class="section-title">Let's build something <span class="gradient-text">great</span> together.</h2>
+          <p>I'm open to internships, freelance client work and collaborations on AI-driven products. Drop a message and I'll get back to you soon.</p>
+          <ul class="contact-list">
+            <li><a href="mailto:nishalnihith@gmail.com"><span class="ci">✉️</span> nishalnihith@gmail.com</a></li>
+            <li><a href="tel:+916374316870"><span class="ci">📞</span> +91 63743 16870</a></li>
+            <li><span><span class="ci">📍</span> Coimbatore, Tamil Nadu, India</span></li>
+          </ul>
+          <div class="socials">
+            <!-- TODO: replace # with your real profile URLs -->
+            <a href="#" aria-label="LinkedIn" class="magnetic">in</a>
+            <a href="#" aria-label="GitHub" class="magnetic">gh</a>
+            <a href="mailto:nishalnihith@gmail.com" aria-label="Email" class="magnetic">@</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="field"><input type="text" id="name" required placeholder=" " /><label for="name">Your Name</label></div>
+          <div class="field"><input type="email" id="email" required placeholder=" " /><label for="email">Your Email</label></div>
+          <div class="field"><textarea id="message" rows="5" required placeholder=" "></textarea><label for="message">Your Message</label></div>
+          <button type="submit" class="btn btn-primary magnetic">Send Message <span>→</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Nishal R · Designed &amp; built with passion.</p>
+    <a href="#home" class="back-top" aria-label="Back to top">↑</a>
+  </footer>
+
+  <script type="module" src="three-scene.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
